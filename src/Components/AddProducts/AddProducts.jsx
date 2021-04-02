@@ -29,7 +29,7 @@ const AddProducts = () => {
       weight: data.Weight,
       image: image,
     };
-    const url = `http://localhost:5055/addproducts`;
+    const url = `https://quiet-retreat-37725.herokuapp.com/addproducts`;
     fetch(url, {
       method: "POST",
       headers: { "content-type": "application/json" },

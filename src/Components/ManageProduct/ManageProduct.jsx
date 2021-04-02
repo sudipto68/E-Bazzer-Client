@@ -6,14 +6,16 @@ import { AiTwotoneDelete } from "react-icons/ai";
 const ManageProduct = () => {
   const [allProducts, setAllProducts] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5055/products")
+    fetch("https://quiet-retreat-37725.herokuapp.com/products")
       .then((response) => response.json())
       .then((data) => {
         setAllProducts(data);
       });
   }, []);
   const deleteProduct = (id) => {
-    fetch(`http://localhost:5055/deleteProduct/${id}`, { method: "DELETE" })
+    fetch(`https://quiet-retreat-37725.herokuapp.com/deleteProduct/${id}`, {
+      method: "DELETE",
+    })
       .then((res) => res.json())
       .then((result) => {
         console.log(result);

@@ -8,7 +8,7 @@ const Checkout = () => {
   console.log(productId);
   const [allProducts, setAllProducts] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5055/products")
+    fetch("https://quiet-retreat-37725.herokuapp.com/products")
       .then((response) => response.json())
       .then((data) => {
         setAllProducts(data);
