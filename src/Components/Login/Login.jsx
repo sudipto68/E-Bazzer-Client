@@ -87,7 +87,7 @@ const Login = () => {
           <br />
           <Button
             variant="outline-success"
-            className="gmail-btn"
+            className="gmail-btn my-3"
             onClick={handleGoogleSignIn}
           >
             <FcGoogle style={{ fontSize: "25px", marginRight: "15px" }} />{" "}
