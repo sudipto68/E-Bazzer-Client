@@ -1,0 +1,12 @@
+.link{
+    font-weight: 500;
+    color: black !important;
+}
+.link:hover{
+    color: #71BA58 !important;
+}
+.btnn{
+    background-color: #71BA58;
+    border: none;
+    width: 80px;
+}

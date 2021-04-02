@@ -1,0 +1,9 @@
+.prd-btn{
+    background-color: #71BA58;
+    border-color: #71BA58;
+    margin-left: auto !important;
+}
+.prd-card{
+    border: none;
+    box-shadow: 1px 1px 10px lightgrey;
+}

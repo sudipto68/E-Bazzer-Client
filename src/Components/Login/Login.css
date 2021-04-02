@@ -1,0 +1,16 @@
+.login-form{
+    border: 1px solid lightgrey;
+    padding: 20px;
+}
+.gmail-btn{
+    border-radius: 20px !important;
+}
+
+@media only screen and (min-width: 768px) {
+    .login-form {
+        width: 500px;
+    }
+    .signIn-btn{
+        width: 440px;
+    }
+}
