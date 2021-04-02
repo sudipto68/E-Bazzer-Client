@@ -8,7 +8,7 @@ const Home = () => {
   const [products, setProducts] = useState([]);
   useEffect(() => {
     setShowSpiner(true);
-    fetch("http://localhost:5055/products")
+    fetch("https://quiet-retreat-37725.herokuapp.com/products")
       .then((response) => response.json())
       .then((data) => {
         setProducts(data);
