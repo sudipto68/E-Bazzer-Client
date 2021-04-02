@@ -54,22 +54,32 @@ const AddProducts = () => {
             <h3 className="text-center my-2 mb-4">Add Products</h3>
             <lebel style={{ fontWeight: "bold" }}>Product Name</lebel>
             <br />
-            <input name="Name" defaultValue="Product Name" ref={register} />
+            <input
+              name="Name"
+              defaultValue="Product Name"
+              ref={register}
+              required
+            />
             <br />
             <br />
             <lebel style={{ fontWeight: "bold" }}>Product Price</lebel>
             <br />
-            <input name="Price" defaultValue="Price" ref={register} />
+            <input name="Price" required defaultValue="Price" ref={register} />
             <br />
             <br />
             <lebel style={{ fontWeight: "bold" }}>Product Weight</lebel>
             <br />
-            <input name="Weight" defaultValue="Weight" ref={register} />
+            <input
+              name="Weight"
+              defaultValue="Weight"
+              ref={register}
+              required
+            />
             <br />
             <br />
             <lebel style={{ fontWeight: "bold" }}>Product Image</lebel>
             <br />
-            <input type="file" onChange={handleImageUpload} />
+            <input type="file" onChange={handleImageUpload} required />
             <br />
             <input
               className="btnn my-3 text-white p-1"

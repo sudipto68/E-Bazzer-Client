@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { Table } from "react-bootstrap";
+import { Button, Table } from "react-bootstrap";
 import { useParams } from "react-router-dom";
 import "./Checkout.css";
 
 const Checkout = () => {
-  let { productId } = useParams();
-  console.log(productId);
+  let { _id } = useParams();
+  //console.log(_id);
   const [allProducts, setAllProducts] = useState([]);
   useEffect(() => {
     fetch("https://quiet-retreat-37725.herokuapp.com/products")
@@ -14,7 +14,7 @@ const Checkout = () => {
         setAllProducts(data);
       });
   }, []);
-  const desiredProduct = allProducts.find((p) => p._id === productId);
+  const desiredProduct = allProducts.find((p) => p._id === _id);
   console.log(desiredProduct);
   return (
     <div>
@@ -29,12 +29,13 @@ const Checkout = () => {
         </thead>
         <tbody>
           <tr>
-            <td>name</td>
+            <td>{desiredProduct?.name}</td>
             <td>1</td>
-            <td>price</td>
+            <td>{desiredProduct?.price}</td>
           </tr>
         </tbody>
       </Table>
+      <Button className="btnn px-2 checkout">Checkout</Button>
     </div>
   );
 };
