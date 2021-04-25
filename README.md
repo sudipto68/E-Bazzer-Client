@@ -1,7 +1,7 @@
 [E-Bazzar](https://e-bazzar-e6e2b.web.app/)
 
 
-# E-Bazzer ---> E-Bazzar is a demo Ecommerce website where user can login and add product or manage product(now any user) and user can click on the buy now button and go to the checkout page and add the product to order list.
+#### E-Bazzer ---> E-Bazzar is a demo Ecommerce website where user can login and add product or manage product(now any user) and user can click on the buy now button and go to the checkout page and add the product to order list.
 
 Created Using
 
